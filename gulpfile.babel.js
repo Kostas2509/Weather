@@ -5,7 +5,6 @@ const babel = require('gulp-babel');
 const browserify = require('gulp-browserify');
 const sass = require('gulp-sass');
 const runSequence = require('run-sequence');
-const jasmine = require('gulp-jasmine');
 
 gulp.task('default', function () {
     return gulp.src('src/**/*.js')
@@ -27,7 +26,6 @@ gulp.task('browserify', ['default'], function () {
 gulp.task('js', function () {
     runSequence(['default', 'browserify']);
     gulp.run('sass');
-    gulp.run('jasmine');
 });
 
 gulp.task('sass', () => {
