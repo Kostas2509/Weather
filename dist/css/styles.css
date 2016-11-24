@@ -1,0 +1,70 @@
+.brand {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  text-align: center;
+  margin: auto; }
+
+.article {
+  text-align: center; }
+
+.title {
+  padding-left: 2rem; }
+
+.weather-block {
+  display: table; }
+
+.weather-block-item {
+  display: table-row;
+  font-size: 1.288rem; }
+
+.weather-block-item-title, .weather-block-item-value {
+  display: table-cell;
+  padding: 0.75rem; }
+
+.nav {
+  margin-bottom: .75rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  text-align: center; }
+
+.city {
+  width: 15rem;
+  height: 3rem; }
+
+.weather-info {
+  display: flex;
+  margin-top: 2rem; }
+
+.block-container, .weather-block-container, .condition-container, .astronomy-container, .atmosphere-container, .wind-container, .forecast .weather-block {
+  border: 0.1rem solid #68878f;
+  border-radius: 1.25rem;
+  padding: 0.5rem; }
+
+.channel-info, .condition-container, .astronomy-container, .atmosphere-container, .wind-container {
+  margin-left: 1.7rem; }
+
+.weather-block-container, .condition-container, .astronomy-container, .atmosphere-container, .wind-container, .forecast .weather-block {
+  max-height: 200px; }
+
+.condition-container {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5); }
+
+.astronomy-container {
+  box-shadow: 0 0 1rem rgba(13, 35, 143, 0.5); }
+
+.atmosphere-container {
+  box-shadow: 0 0 1rem rgba(13, 135, 113, 0.7); }
+
+.wind-container {
+  box-shadow: 0 0 1rem #71877b; }
+
+.forecast {
+  margin-left: 2.25rem; }
+
+.forecast-title {
+  text-align: center; }
+
+.forecast .weather-block {
+  box-shadow: 0 0 1rem #5d2d49;
+  margin-bottom: 0.2rem;
+  width: 100%; }

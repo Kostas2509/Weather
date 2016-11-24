@@ -1,0 +1,58 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Yahoo Weather</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand">
+                            <a href="#">
+                                <a href="http://weather.yahoo.com" target="_blank"> <img class="brand" src="http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif" width="134" height="29"/> </a>
+                            </a>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <form class="navbar-form navbar-center" role="search">
+                            <div class="form-group">
+                                <select data-element-type="city" class="city">
+                                    <option>Voronezh</option>
+                                    <option>Moscow</option>
+                                    <option>St. Petersburg</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                <div>
+            </nav>
+        </header>
+        <main>
+            <div data-element-type="container" hidden>
+                <div class="title">
+                    <span data-element-type="title"></span>
+                    <a data-element-type="title-link" target="_blank">Full conditions on weather.yahoo.com</a>
+                </div>
+                <div class="weather-info">
+                    <div data-element-type="condition" class="condition-container"></div>
+                    <div data-element-type="astronomy" class="astronomy-container"></div>
+                    <div data-element-type="atmosphere" class="atmosphere-container"></div>
+                    <div data-element-type="wind" class="wind-container"></div>
+                    <div class="forecast">
+                        <div class="forecast-title">Forecast</div>
+                        <div data-element-type="forecast"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="dist/css/styles.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+        <script src="app/main.js"></script>
+    </body>
+<html> 

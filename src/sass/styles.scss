@@ -1,0 +1,103 @@
+@import 'variables';
+
+.brand
+{
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.article {
+    text-align: center;
+}
+
+.title {
+    padding-left: 2rem;
+}
+
+.weather-block {
+    display: table;
+}
+
+.weather-block-item {
+    display: table-row;
+    font-size: 1.288rem;
+}
+
+.weather-block-item-title, .weather-block-item-value {
+    display: table-cell;
+    padding: 0.75rem;
+}
+
+.nav {
+    margin-bottom: .75rem;
+    box-shadow: $shadow-size $default-shadow-color;
+    text-align: center;
+}
+
+.city {
+    width: 15rem;
+    height: 3rem;
+}
+
+.weather-info {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.block-container {
+    border: 0.1rem solid $item-border-color;
+    border-radius: 1.25rem;
+    padding: 0.5rem;
+}
+
+.channel-info {
+    margin-left: 1.7rem; 
+}
+
+.weather-block-container {
+    @extend .block-container;
+    max-height: 200px;  
+}
+
+.condition-container {
+    @extend .weather-block-container;
+    @extend .channel-info;
+    box-shadow: $shadow-size $default-shadow-color;
+}
+
+.astronomy-container {
+    @extend .weather-block-container;
+    @extend .channel-info;
+    box-shadow: $shadow-size $astronomy-shadow-color;
+}
+
+.atmosphere-container {
+    @extend .weather-block-container;
+    @extend .channel-info;
+    box-shadow: $shadow-size $atmosphere-shadow-color;
+}
+
+.wind-container {
+    @extend .weather-block-container;
+    @extend .channel-info;
+    box-shadow: $shadow-size $wind-shadow-color;
+}
+
+.forecast {
+    margin-left: 2.25rem;
+}
+
+.forecast-title {
+    text-align: center;
+}
+
+.forecast .weather-block {
+    @extend .weather-block-container;
+    @extend .block-container;
+    box-shadow: $shadow-size $forecast-shadow-color;
+    margin-bottom: 0.2rem;
+    width: 100%;
+}
