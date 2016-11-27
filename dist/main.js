@@ -119,34 +119,10 @@ var App = function () {
     }, {
         key: 'fillForecastBlock',
         value: function fillForecastBlock(forecasts, tempUnit) {
-            var forecastHtml = [];
-            var _iteratorNormalCompletion = true;
-            var _didIteratorError = false;
-            var _iteratorError = undefined;
-
-            try {
-                for (var _iterator = forecasts[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                    var forecast = _step.value;
-
-                    var item = new _forecast.Forecast(forecast, tempUnit);
-                    forecastHtml.push(item.getBlockContent().join(''));
-                }
-            } catch (err) {
-                _didIteratorError = true;
-                _iteratorError = err;
-            } finally {
-                try {
-                    if (!_iteratorNormalCompletion && _iterator.return) {
-                        _iterator.return();
-                    }
-                } finally {
-                    if (_didIteratorError) {
-                        throw _iteratorError;
-                    }
-                }
-            }
-
-            this.$forecast.html(forecastHtml.join(''));
+            this.$forecast.html(forecasts.map(function (item) {
+                var forecast = new _forecast.Forecast(item, tempUnit);
+                return forecast.getBlockContent().join('');
+            }));
         }
     }]);
 

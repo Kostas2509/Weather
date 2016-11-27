@@ -74,12 +74,10 @@ class App {
         this.$wind.html(windModel.getHtml());
     }
     fillForecastBlock(forecasts, tempUnit) {
-        let forecastHtml = [];
-        for (let forecast of forecasts) {
-            let item = new Forecast(forecast, tempUnit);
-            forecastHtml.push(item.getBlockContent().join(''));
-        }
-        this.$forecast.html(forecastHtml.join(''));
+        this.$forecast.html(forecasts.map(function (item) {
+            let forecast = new Forecast(item, tempUnit);
+            return forecast.getBlockContent().join('');
+        }));
     }
 }
 
