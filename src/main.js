@@ -13,7 +13,7 @@ class App {
         this.intervalId = setInterval(() => { this.getWeatherInfo() }, this.interval);
     }
     initSelector() {
-        this.$city = $('[data-element-type="city"]');
+        this.$city = $('.js-city');
         this.$city.on('change', () => {
             clearInterval(this.intervalId);
             this.getWeatherInfo();
@@ -21,14 +21,14 @@ class App {
         });
     }
     initBlocks() {
-        this.$container = $('[data-element-type="container"]');
-        this.$title = this.$container.find('[data-element-type="title"]');
-        this.$link = this.$container.find('[data-element-type="title-link"]');
-        this.$astronomy = this.$container.find('[data-element-type="astronomy"]');
-        this.$atmosphere = this.$container.find('[data-element-type="atmosphere"]');
-        this.$condition = this.$container.find('[data-element-type="condition"]');
-        this.$forecast = this.$container.find('[data-element-type="forecast"]');
-        this.$wind = this.$container.find('[data-element-type="wind"]');
+        this.$container = $('.js-container');
+        this.$title = this.$container.find('.js-title');
+        this.$link = this.$container.find('.js-title-link');
+        this.$astronomy = this.$container.find('.js-astronomy');
+        this.$atmosphere = this.$container.find('.js-atmosphere');
+        this.$condition = this.$container.find('.js-condition');
+        this.$forecast = this.$container.find('.js-forecast');
+        this.$wind = this.$container.find('.js-wind');
     }
     getWeatherInfo() {
         let city = this.$city.val();
