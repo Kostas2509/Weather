@@ -1403,7 +1403,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.Astronomy = undefined;
+exports.Condition = undefined;
 
 var _createClass = function () {
     function defineProperties(target, props) {
@@ -1451,32 +1451,35 @@ function _inherits(subClass, superClass) {
     }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 }
 
-var Astronomy = exports.Astronomy = function (_WeatherItem) {
-    _inherits(Astronomy, _WeatherItem);
+var Condition = exports.Condition = function (_WeatherItem) {
+    _inherits(Condition, _WeatherItem);
 
-    function Astronomy(astronomy) {
-        _classCallCheck(this, Astronomy);
+    function Condition(condition, tempUnit) {
+        _classCallCheck(this, Condition);
 
-        var _this = _possibleConstructorReturn(this, (Astronomy.__proto__ || Object.getPrototypeOf(Astronomy)).call(this, 'Sun and moon'));
+        var _this = _possibleConstructorReturn(this, (Condition.__proto__ || Object.getPrototypeOf(Condition)).call(this, 'Condition'));
 
-        _this.sunrise = astronomy.sunrise;
-        _this.sunset = astronomy.sunset;
+        _this.date = condition.date;
+        _this.temp = condition.temp;
+        _this.text = condition.text;
+        _this.tempUnit = tempUnit;
         return _this;
     }
 
-    _createClass(Astronomy, [{
+    _createClass(Condition, [{
         key: 'getHtml',
         value: function getHtml() {
-            _get(Astronomy.prototype.__proto__ || Object.getPrototypeOf(Astronomy.prototype), 'getWeatherItemHtml', this).call(this, 'Sunrise', this.sunrise);
-            _get(Astronomy.prototype.__proto__ || Object.getPrototypeOf(Astronomy.prototype), 'getWeatherItemHtml', this).call(this, 'Sunset', this.sunset, true);
+            _get(Condition.prototype.__proto__ || Object.getPrototypeOf(Condition.prototype), 'getWeatherItemHtml', this).call(this, 'Date', this.date);
+            _get(Condition.prototype.__proto__ || Object.getPrototypeOf(Condition.prototype), 'getWeatherItemHtml', this).call(this, 'Temp', this.temp + '<sup>o</sup> ' + this.tempUnit);
+            _get(Condition.prototype.__proto__ || Object.getPrototypeOf(Condition.prototype), 'getWeatherItemHtml', this).call(this, 'Text', this.text);
             return this.blockContent.join('');
         }
     }]);
 
-    return Astronomy;
+    return Condition;
 }(_weatherItem.WeatherItem);
 
-}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_85e6cc43.js","/")
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_3eed421d.js","/")
 },{"./weatherItem":6,"buffer":1,"oMfpAn":4}],6:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 'use strict';

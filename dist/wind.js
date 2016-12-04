@@ -1403,7 +1403,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.Astronomy = undefined;
+exports.Wind = undefined;
 
 var _createClass = function () {
     function defineProperties(target, props) {
@@ -1451,32 +1451,46 @@ function _inherits(subClass, superClass) {
     }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 }
 
-var Astronomy = exports.Astronomy = function (_WeatherItem) {
-    _inherits(Astronomy, _WeatherItem);
+var Wind = exports.Wind = function (_WeatherItem) {
+    _inherits(Wind, _WeatherItem);
 
-    function Astronomy(astronomy) {
-        _classCallCheck(this, Astronomy);
+    function Wind(wind, speedUnit) {
+        _classCallCheck(this, Wind);
 
-        var _this = _possibleConstructorReturn(this, (Astronomy.__proto__ || Object.getPrototypeOf(Astronomy)).call(this, 'Sun and moon'));
+        var _this = _possibleConstructorReturn(this, (Wind.__proto__ || Object.getPrototypeOf(Wind)).call(this, 'Wind'));
 
-        _this.sunrise = astronomy.sunrise;
-        _this.sunset = astronomy.sunset;
+        _this.chill = wind.chill;
+        _this.direction = wind.direction;
+        _this.speed = wind.speed;
+        _this.speedUnit = speedUnit;
         return _this;
     }
 
-    _createClass(Astronomy, [{
+    _createClass(Wind, [{
         key: 'getHtml',
         value: function getHtml() {
-            _get(Astronomy.prototype.__proto__ || Object.getPrototypeOf(Astronomy.prototype), 'getWeatherItemHtml', this).call(this, 'Sunrise', this.sunrise);
-            _get(Astronomy.prototype.__proto__ || Object.getPrototypeOf(Astronomy.prototype), 'getWeatherItemHtml', this).call(this, 'Sunset', this.sunset, true);
+            _get(Wind.prototype.__proto__ || Object.getPrototypeOf(Wind.prototype), 'getWeatherItemHtml', this).call(this, 'Chill', this.chill);
+            _get(Wind.prototype.__proto__ || Object.getPrototypeOf(Wind.prototype), 'getWeatherItemHtml', this).call(this, 'Direction', this.getDirectionName());
+            _get(Wind.prototype.__proto__ || Object.getPrototypeOf(Wind.prototype), 'getWeatherItemHtml', this).call(this, 'Speed', this.speed + ' ' + this.speedUnit);
             return this.blockContent.join('');
+        }
+    }, {
+        key: 'getDirectionName',
+        value: function getDirectionName() {
+            var changeAngleValue = 22.5;
+            var swapDirectionValue = 0.5;
+            var directionCount = 16;
+
+            var val = Math.floor(this.direction / changeAngleValue + swapDirectionValue);
+            var directionNames = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
+            return directionNames[val % directionCount];
         }
     }]);
 
-    return Astronomy;
+    return Wind;
 }(_weatherItem.WeatherItem);
 
-}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_85e6cc43.js","/")
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_37d83b0f.js","/")
 },{"./weatherItem":6,"buffer":1,"oMfpAn":4}],6:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 'use strict';

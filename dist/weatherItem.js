@@ -1398,12 +1398,9 @@ process.chdir = function (dir) {
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 'use strict';
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.Astronomy = undefined;
 
 var _createClass = function () {
     function defineProperties(target, props) {
@@ -1415,79 +1412,11 @@ var _createClass = function () {
     };
 }();
 
-var _get = function get(object, property, receiver) {
-    if (object === null) object = Function.prototype;var desc = Object.getOwnPropertyDescriptor(object, property);if (desc === undefined) {
-        var parent = Object.getPrototypeOf(object);if (parent === null) {
-            return undefined;
-        } else {
-            return get(parent, property, receiver);
-        }
-    } else if ("value" in desc) {
-        return desc.value;
-    } else {
-        var getter = desc.get;if (getter === undefined) {
-            return undefined;
-        }return getter.call(receiver);
-    }
-};
-
-var _weatherItem = require('./weatherItem');
-
 function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) {
         throw new TypeError("Cannot call a class as a function");
     }
 }
-
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
-
-var Astronomy = exports.Astronomy = function (_WeatherItem) {
-    _inherits(Astronomy, _WeatherItem);
-
-    function Astronomy(astronomy) {
-        _classCallCheck(this, Astronomy);
-
-        var _this = _possibleConstructorReturn(this, (Astronomy.__proto__ || Object.getPrototypeOf(Astronomy)).call(this, 'Sun and moon'));
-
-        _this.sunrise = astronomy.sunrise;
-        _this.sunset = astronomy.sunset;
-        return _this;
-    }
-
-    _createClass(Astronomy, [{
-        key: 'getHtml',
-        value: function getHtml() {
-            _get(Astronomy.prototype.__proto__ || Object.getPrototypeOf(Astronomy.prototype), 'getWeatherItemHtml', this).call(this, 'Sunrise', this.sunrise);
-            _get(Astronomy.prototype.__proto__ || Object.getPrototypeOf(Astronomy.prototype), 'getWeatherItemHtml', this).call(this, 'Sunset', this.sunset, true);
-            return this.blockContent.join('');
-        }
-    }]);
-
-    return Astronomy;
-}(_weatherItem.WeatherItem);
-
-}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_85e6cc43.js","/")
-},{"./weatherItem":6,"buffer":1,"oMfpAn":4}],6:[function(require,module,exports){
-(function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var WeatherItem = exports.WeatherItem = function () {
     function WeatherItem(blockTitle) {
@@ -1515,5 +1444,5 @@ var WeatherItem = exports.WeatherItem = function () {
     return WeatherItem;
 }();
 
-}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/weatherItem.js","/")
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_8934eb04.js","/")
 },{"buffer":1,"oMfpAn":4}]},{},[5])
