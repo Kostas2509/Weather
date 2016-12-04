@@ -1110,8 +1110,8 @@ function assert (test, message) {
   if (!test) throw new Error(message || 'Failed assertion')
 }
 
-}).call(this,require("1YiZ5S"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/index.js","/../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer")
-},{"1YiZ5S":4,"base64-js":2,"buffer":1,"ieee754":3}],2:[function(require,module,exports){
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/index.js","/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer")
+},{"base64-js":2,"buffer":1,"ieee754":3,"oMfpAn":4}],2:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 
@@ -1238,8 +1238,8 @@ var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 	exports.fromByteArray = uint8ToBase64
 }(typeof exports === 'undefined' ? (this.base64js = {}) : exports))
 
-}).call(this,require("1YiZ5S"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib/b64.js","/../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib")
-},{"1YiZ5S":4,"buffer":1}],3:[function(require,module,exports){
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib/b64.js","/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib")
+},{"buffer":1,"oMfpAn":4}],3:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
@@ -1326,8 +1326,8 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-}).call(this,require("1YiZ5S"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/ieee754/index.js","/../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/ieee754")
-},{"1YiZ5S":4,"buffer":1}],4:[function(require,module,exports){
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/ieee754/index.js","/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/ieee754")
+},{"buffer":1,"oMfpAn":4}],4:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 // shim for using process in browser
 
@@ -1393,17 +1393,163 @@ process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
 
-}).call(this,require("1YiZ5S"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../node_modules/gulp-browserify/node_modules/browserify/node_modules/process/browser.js","/../node_modules/gulp-browserify/node_modules/browserify/node_modules/process")
-},{"1YiZ5S":4,"buffer":1}],5:[function(require,module,exports){
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/process/browser.js","/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/process")
+},{"buffer":1,"oMfpAn":4}],5:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 'use strict';
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.Forecast = undefined;
+exports.Astronomy = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+var _weatherItem = require('./weatherItem');
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Astronomy = exports.Astronomy = function (_WeatherItem) {
+    _inherits(Astronomy, _WeatherItem);
+
+    function Astronomy(astronomy) {
+        _classCallCheck(this, Astronomy);
+
+        var _this = _possibleConstructorReturn(this, (Astronomy.__proto__ || Object.getPrototypeOf(Astronomy)).call(this, 'Sun and moon'));
+
+        _this.sunrise = astronomy.sunrise;
+        _this.sunset = astronomy.sunset;
+        return _this;
+    }
+
+    _createClass(Astronomy, [{
+        key: 'getHtml',
+        value: function getHtml() {
+            _get(Astronomy.prototype.__proto__ || Object.getPrototypeOf(Astronomy.prototype), 'getWeatherItemHtml', this).call(this, 'Sunrise', this.sunrise);
+            _get(Astronomy.prototype.__proto__ || Object.getPrototypeOf(Astronomy.prototype), 'getWeatherItemHtml', this).call(this, 'Sunset', this.sunset, true);
+            return this.blockContent.join('');
+        }
+    }]);
+
+    return Astronomy;
+}(_weatherItem.WeatherItem);
+
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/astronomy.js","/")
+},{"./weatherItem":10,"buffer":1,"oMfpAn":4}],6:[function(require,module,exports){
+(function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Atmosphere = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+var _weatherItem = require('./weatherItem');
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Atmosphere = exports.Atmosphere = function (_WeatherItem) {
+    _inherits(Atmosphere, _WeatherItem);
+
+    function Atmosphere(atmosphere) {
+        _classCallCheck(this, Atmosphere);
+
+        var _this = _possibleConstructorReturn(this, (Atmosphere.__proto__ || Object.getPrototypeOf(Atmosphere)).call(this, 'Atmosphere'));
+
+        _this.humidity = atmosphere.humidity;
+        _this.pressure = atmosphere.pressure;
+        _this.rising = atmosphere.rising;
+        _this.visibility = atmosphere.visibility;
+        return _this;
+    }
+
+    _createClass(Atmosphere, [{
+        key: 'getHtml',
+        value: function getHtml() {
+            _get(Atmosphere.prototype.__proto__ || Object.getPrototypeOf(Atmosphere.prototype), 'getWeatherItemHtml', this).call(this, 'Humidity', this.humidity + ' %');
+            _get(Atmosphere.prototype.__proto__ || Object.getPrototypeOf(Atmosphere.prototype), 'getWeatherItemHtml', this).call(this, 'Pressure', this.pressure);
+            _get(Atmosphere.prototype.__proto__ || Object.getPrototypeOf(Atmosphere.prototype), 'getWeatherItemHtml', this).call(this, 'UV Index', this.rising);
+            _get(Atmosphere.prototype.__proto__ || Object.getPrototypeOf(Atmosphere.prototype), 'getWeatherItemHtml', this).call(this, 'Visibility', this.visibility, true);
+            return this.blockContent.join('');
+        }
+    }]);
+
+    return Atmosphere;
+}(_weatherItem.WeatherItem);
+
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/atmosphere.js","/")
+},{"./weatherItem":10,"buffer":1,"oMfpAn":4}],7:[function(require,module,exports){
+(function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Condition = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+var _weatherItem = require('./weatherItem');
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Condition = exports.Condition = function (_WeatherItem) {
+    _inherits(Condition, _WeatherItem);
+
+    function Condition(condition, tempUnit) {
+        _classCallCheck(this, Condition);
+
+        var _this = _possibleConstructorReturn(this, (Condition.__proto__ || Object.getPrototypeOf(Condition)).call(this, 'Condition'));
+
+        _this.date = condition.date;
+        _this.temp = condition.temp;
+        _this.text = condition.text;
+        _this.tempUnit = tempUnit;
+        return _this;
+    }
+
+    _createClass(Condition, [{
+        key: 'getHtml',
+        value: function getHtml() {
+            _get(Condition.prototype.__proto__ || Object.getPrototypeOf(Condition.prototype), 'getWeatherItemHtml', this).call(this, 'Date', this.date);
+            _get(Condition.prototype.__proto__ || Object.getPrototypeOf(Condition.prototype), 'getWeatherItemHtml', this).call(this, 'Temp', this.temp + '<sup>o</sup> ' + this.tempUnit);
+            _get(Condition.prototype.__proto__ || Object.getPrototypeOf(Condition.prototype), 'getWeatherItemHtml', this).call(this, 'Text', this.text);
+            return this.blockContent.join('');
+        }
+    }]);
+
+    return Condition;
+}(_weatherItem.WeatherItem);
+
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/condition.js","/")
+},{"./weatherItem":10,"buffer":1,"oMfpAn":4}],8:[function(require,module,exports){
+(function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.app = undefined;
 
 var _createClass = function () {
     function defineProperties(target, props) {
@@ -1415,23 +1561,15 @@ var _createClass = function () {
     };
 }();
 
-var _get = function get(object, property, receiver) {
-    if (object === null) object = Function.prototype;var desc = Object.getOwnPropertyDescriptor(object, property);if (desc === undefined) {
-        var parent = Object.getPrototypeOf(object);if (parent === null) {
-            return undefined;
-        } else {
-            return get(parent, property, receiver);
-        }
-    } else if ("value" in desc) {
-        return desc.value;
-    } else {
-        var getter = desc.get;if (getter === undefined) {
-            return undefined;
-        }return getter.call(receiver);
-    }
-};
+var _astronomy = require('./astronomy');
 
-var _weatherItem = require('./weatherItem');
+var _atmosphere = require('./atmosphere');
+
+var _condition = require('./condition');
+
+var _forecast = require('./forecast');
+
+var _wind = require('./wind');
 
 function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) {
@@ -1439,17 +1577,139 @@ function _classCallCheck(instance, Constructor) {
     }
 }
 
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
+var App = function () {
+    function App() {
+        var _this = this;
 
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
+        _classCallCheck(this, App);
+
+        this.interval = 300000;
+        this.initSelector();
+        this.initBlocks();
+        this.getWeatherInfo();
+        this.intervalId = setInterval(function () {
+            _this.getWeatherInfo();
+        }, this.interval);
+    }
+
+    _createClass(App, [{
+        key: 'initSelector',
+        value: function initSelector() {
+            var _this2 = this;
+
+            this.$city = $('.js-city');
+            this.$city.on('change', function () {
+                clearInterval(_this2.intervalId);
+                _this2.getWeatherInfo();
+                _this2.intervalId = setInterval(function () {
+                    _this2.getWeatherInfo();
+                }, _this2.interval);
+            });
+        }
+    }, {
+        key: 'initBlocks',
+        value: function initBlocks() {
+            this.$container = $('.js-container');
+            this.$title = this.$container.find('.js-title');
+            this.$link = this.$container.find('.js-title-link');
+            this.$astronomy = this.$container.find('.js-astronomy');
+            this.$atmosphere = this.$container.find('.js-atmosphere');
+            this.$condition = this.$container.find('.js-condition');
+            this.$forecast = this.$container.find('.js-forecast');
+            this.$wind = this.$container.find('.js-wind');
+        }
+    }, {
+        key: 'getWeatherInfo',
+        value: function getWeatherInfo() {
+            var _this3 = this;
+
+            var city = this.$city.val();
+            var url = 'https://query.yahooapis.com/v1/public/';
+            var query = url + 'yql?q=select * from weather.forecast where woeid in\n            (select woeid from geo.places(1) where text="' + city + '")&format=json';
+
+            $.get(query, function (data) {
+                if (data.query.results === null) {
+                    bootbox.alert('City not found: ' + city + '!');
+                } else {
+                    _this3.fillBlocks(data.query.results.channel);
+                    $('.container').show();
+                }
+            });
+        }
+    }, {
+        key: 'fillBlocks',
+        value: function fillBlocks(channel) {
+            var tempUnit = channel.units.temperature;
+            var speedUnit = channel.units.speed;
+            this.$title.text(channel.item.title);
+            this.$link.attr('href', channel.item.link);
+            this.fillAstronomyBlock(channel.astronomy);
+            this.fillAtmosphereBlock(channel.atmosphere);
+            this.fillConditionBlock(channel.item.condition, tempUnit);
+            this.fillForecastBlock(channel.item.forecast, tempUnit);
+            this.fillWindBlock(channel.wind, speedUnit);
+            this.$container.show();
+        }
+    }, {
+        key: 'fillAstronomyBlock',
+        value: function fillAstronomyBlock(astronomy) {
+            var astronomyModel = new _astronomy.Astronomy(astronomy);
+            this.$astronomy.html(astronomyModel.getHtml());
+        }
+    }, {
+        key: 'fillAtmosphereBlock',
+        value: function fillAtmosphereBlock(atmosphere) {
+            var atmosphereMoedel = new _atmosphere.Atmosphere(atmosphere);
+            this.$atmosphere.html(atmosphereMoedel.getHtml());
+        }
+    }, {
+        key: 'fillConditionBlock',
+        value: function fillConditionBlock(condition, tempUnit) {
+            var conditionModel = new _condition.Condition(condition, tempUnit);
+            this.$condition.html(conditionModel.getHtml());
+        }
+    }, {
+        key: 'fillWindBlock',
+        value: function fillWindBlock(wind, speedUnit) {
+            var windModel = new _wind.Wind(wind, speedUnit);
+            this.$wind.html(windModel.getHtml());
+        }
+    }, {
+        key: 'fillForecastBlock',
+        value: function fillForecastBlock(forecasts, tempUnit) {
+            this.$forecast.html(forecasts.map(function (item) {
+                var forecast = new _forecast.Forecast(item, tempUnit);
+                return forecast.getBlockContent().join('');
+            }));
+        }
+    }]);
+
+    return App;
+}();
+
+var app = exports.app = new App();
+
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_39c183b2.js","/")
+},{"./astronomy":5,"./atmosphere":6,"./condition":7,"./forecast":9,"./wind":11,"buffer":1,"oMfpAn":4}],9:[function(require,module,exports){
+(function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Forecast = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+var _weatherItem = require('./weatherItem');
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Forecast = exports.Forecast = function (_WeatherItem) {
     _inherits(Forecast, _WeatherItem);
@@ -1484,8 +1744,8 @@ var Forecast = exports.Forecast = function (_WeatherItem) {
     return Forecast;
 }(_weatherItem.WeatherItem);
 
-}).call(this,require("1YiZ5S"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_dc8e7830.js","/")
-},{"./weatherItem":6,"1YiZ5S":4,"buffer":1}],6:[function(require,module,exports){
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/forecast.js","/")
+},{"./weatherItem":10,"buffer":1,"oMfpAn":4}],10:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 'use strict';
 
@@ -1523,5 +1783,66 @@ var WeatherItem = exports.WeatherItem = function () {
     return WeatherItem;
 }();
 
-}).call(this,require("1YiZ5S"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/weatherItem.js","/")
-},{"1YiZ5S":4,"buffer":1}]},{},[5])
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/weatherItem.js","/")
+},{"buffer":1,"oMfpAn":4}],11:[function(require,module,exports){
+(function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Wind = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+var _weatherItem = require('./weatherItem');
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Wind = exports.Wind = function (_WeatherItem) {
+    _inherits(Wind, _WeatherItem);
+
+    function Wind(wind, speedUnit) {
+        _classCallCheck(this, Wind);
+
+        var _this = _possibleConstructorReturn(this, (Wind.__proto__ || Object.getPrototypeOf(Wind)).call(this, 'Wind'));
+
+        _this.chill = wind.chill;
+        _this.direction = wind.direction;
+        _this.speed = wind.speed;
+        _this.speedUnit = speedUnit;
+        return _this;
+    }
+
+    _createClass(Wind, [{
+        key: 'getHtml',
+        value: function getHtml() {
+            _get(Wind.prototype.__proto__ || Object.getPrototypeOf(Wind.prototype), 'getWeatherItemHtml', this).call(this, 'Chill', this.chill);
+            _get(Wind.prototype.__proto__ || Object.getPrototypeOf(Wind.prototype), 'getWeatherItemHtml', this).call(this, 'Direction', this.getDirectionName());
+            _get(Wind.prototype.__proto__ || Object.getPrototypeOf(Wind.prototype), 'getWeatherItemHtml', this).call(this, 'Speed', this.speed + ' ' + this.speedUnit);
+            return this.blockContent.join('');
+        }
+    }, {
+        key: 'getDirectionName',
+        value: function getDirectionName() {
+            var changeAngleValue = 22.5;
+            var swapDirectionValue = 0.5;
+            var directionCount = 16;
+
+            var val = Math.floor(this.direction / changeAngleValue + swapDirectionValue);
+            var directionNames = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
+            return directionNames[val % directionCount];
+        }
+    }]);
+
+    return Wind;
+}(_weatherItem.WeatherItem);
+
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/wind.js","/")
+},{"./weatherItem":10,"buffer":1,"oMfpAn":4}]},{},[8])

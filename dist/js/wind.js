@@ -1110,8 +1110,8 @@ function assert (test, message) {
   if (!test) throw new Error(message || 'Failed assertion')
 }
 
-}).call(this,require("1YiZ5S"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/index.js","/../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer")
-},{"1YiZ5S":4,"base64-js":2,"buffer":1,"ieee754":3}],2:[function(require,module,exports){
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/index.js","/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer")
+},{"base64-js":2,"buffer":1,"ieee754":3,"oMfpAn":4}],2:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 
@@ -1238,8 +1238,8 @@ var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 	exports.fromByteArray = uint8ToBase64
 }(typeof exports === 'undefined' ? (this.base64js = {}) : exports))
 
-}).call(this,require("1YiZ5S"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib/b64.js","/../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib")
-},{"1YiZ5S":4,"buffer":1}],3:[function(require,module,exports){
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib/b64.js","/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib")
+},{"buffer":1,"oMfpAn":4}],3:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
@@ -1326,8 +1326,8 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-}).call(this,require("1YiZ5S"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/ieee754/index.js","/../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/ieee754")
-},{"1YiZ5S":4,"buffer":1}],4:[function(require,module,exports){
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/ieee754/index.js","/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/ieee754")
+},{"buffer":1,"oMfpAn":4}],4:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 // shim for using process in browser
 
@@ -1393,8 +1393,8 @@ process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
 
-}).call(this,require("1YiZ5S"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../node_modules/gulp-browserify/node_modules/browserify/node_modules/process/browser.js","/../node_modules/gulp-browserify/node_modules/browserify/node_modules/process")
-},{"1YiZ5S":4,"buffer":1}],5:[function(require,module,exports){
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/process/browser.js","/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/process")
+},{"buffer":1,"oMfpAn":4}],5:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 'use strict';
 
@@ -1403,7 +1403,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.Condition = undefined;
+exports.Wind = undefined;
 
 var _createClass = function () {
     function defineProperties(target, props) {
@@ -1451,36 +1451,47 @@ function _inherits(subClass, superClass) {
     }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 }
 
-var Condition = exports.Condition = function (_WeatherItem) {
-    _inherits(Condition, _WeatherItem);
+var Wind = exports.Wind = function (_WeatherItem) {
+    _inherits(Wind, _WeatherItem);
 
-    function Condition(condition, tempUnit) {
-        _classCallCheck(this, Condition);
+    function Wind(wind, speedUnit) {
+        _classCallCheck(this, Wind);
 
-        var _this = _possibleConstructorReturn(this, (Condition.__proto__ || Object.getPrototypeOf(Condition)).call(this, 'Condition'));
+        var _this = _possibleConstructorReturn(this, (Wind.__proto__ || Object.getPrototypeOf(Wind)).call(this, 'Wind'));
 
-        _this.date = condition.date;
-        _this.temp = condition.temp;
-        _this.text = condition.text;
-        _this.tempUnit = tempUnit;
+        _this.chill = wind.chill;
+        _this.direction = wind.direction;
+        _this.speed = wind.speed;
+        _this.speedUnit = speedUnit;
         return _this;
     }
 
-    _createClass(Condition, [{
+    _createClass(Wind, [{
         key: 'getHtml',
         value: function getHtml() {
-            _get(Condition.prototype.__proto__ || Object.getPrototypeOf(Condition.prototype), 'getWeatherItemHtml', this).call(this, 'Date', this.date);
-            _get(Condition.prototype.__proto__ || Object.getPrototypeOf(Condition.prototype), 'getWeatherItemHtml', this).call(this, 'Temp', this.temp + '<sup>o</sup> ' + this.tempUnit);
-            _get(Condition.prototype.__proto__ || Object.getPrototypeOf(Condition.prototype), 'getWeatherItemHtml', this).call(this, 'Text', this.text);
+            _get(Wind.prototype.__proto__ || Object.getPrototypeOf(Wind.prototype), 'getWeatherItemHtml', this).call(this, 'Chill', this.chill);
+            _get(Wind.prototype.__proto__ || Object.getPrototypeOf(Wind.prototype), 'getWeatherItemHtml', this).call(this, 'Direction', this.getDirectionName());
+            _get(Wind.prototype.__proto__ || Object.getPrototypeOf(Wind.prototype), 'getWeatherItemHtml', this).call(this, 'Speed', this.speed + ' ' + this.speedUnit);
             return this.blockContent.join('');
+        }
+    }, {
+        key: 'getDirectionName',
+        value: function getDirectionName() {
+            var changeAngleValue = 22.5;
+            var swapDirectionValue = 0.5;
+            var directionCount = 16;
+
+            var val = Math.floor(this.direction / changeAngleValue + swapDirectionValue);
+            var directionNames = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
+            return directionNames[val % directionCount];
         }
     }]);
 
-    return Condition;
+    return Wind;
 }(_weatherItem.WeatherItem);
 
-}).call(this,require("1YiZ5S"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_20ba580c.js","/")
-},{"./weatherItem":6,"1YiZ5S":4,"buffer":1}],6:[function(require,module,exports){
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_31363ff0.js","/")
+},{"./weatherItem":6,"buffer":1,"oMfpAn":4}],6:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 'use strict';
 
@@ -1518,5 +1529,5 @@ var WeatherItem = exports.WeatherItem = function () {
     return WeatherItem;
 }();
 
-}).call(this,require("1YiZ5S"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/weatherItem.js","/")
-},{"1YiZ5S":4,"buffer":1}]},{},[5])
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/weatherItem.js","/")
+},{"buffer":1,"oMfpAn":4}]},{},[5])
